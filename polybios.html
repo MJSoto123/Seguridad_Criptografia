@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cifrado Polybios</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navegación</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="polybios.html">Cifrado Polybios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rejilla.html">Cifrado Por Rejilla</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Decifrado Polybios</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Información sobre el Algoritmo</h5>
+                        <p class="card-text">
+                            El cifrado Polybios, también conocido como cifrado cuadrado Polybios, es un cifrado de sustitución simple. 
+                            En este cifrado, cada letra se reemplaza por una combinación de fila y columna de un cuadrado.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sobre el Cifrado Polybios</h5>
+                        <p class="card-text">
+                            El cifrado Polybios utiliza una cuadrícula (a menudo 5x5) con letras o números, y cada letra se representa mediante su posición en esta cuadrícula. 
+                            Es una técnica de cifrado simple y fácil de implementar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card">
+                            <img src="img/polybios_table.png" class="card-img-top" alt="Foto Miembro 2">
+                            <div class="card-body">
+                                <p class="card-text">Matriz Polybios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Texto cifrado</h5>
+                        <p class="card-text">
+                            <textarea id="polybiosInput" class="form-control" rows="3" placeholder="Ingrese el texto cifrado"></textarea>
+                            <div id="errorInfo" class="text-danger"></div>
+                            <button class="btn btn-primary mt-2" onclick="polybios()">Cifrar</button>
+                            <div id="polybiosResult" class="mt-3"></div>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/polybios.js"></script>
+</body>
+</html>
