@@ -7,7 +7,6 @@ function polybios() {
     }
     else{
         var textoDescifrado = desencriptarPolybius(result);
-        console.log(result, textoDescifrado)
         document.getElementById("polybiosResult").innerHTML = textoDescifrado;
     }
 }

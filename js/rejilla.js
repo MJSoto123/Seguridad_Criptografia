@@ -6,8 +6,6 @@ function preprocesar() {
     var text = document.getElementById("rejillaInput").value;
     prepro = text.replace(/[^\w\s]|_/g, '').replace(/\s/g, '').toUpperCase();
     size = getSqrt(prepro.length);
-    console.log(prepro.length)
-    console.log(prepro, size)
     for(let i = prepro.length; i < size*size; i++) prepro += "X";
     document.getElementById("rejillaPre").innerHTML = prepro;
     document.getElementById("rejillaKey").innerHTML = ""; key = "";
@@ -30,7 +28,6 @@ function genKey() {
     }
     grid = generateGrid(size);
     key = extract(grid, size);
-    console.log(key)
     document.getElementById("rejillaKey").innerHTML = key;
     document.getElementById("errorInfo").innerHTML = "";
     document.getElementById("rejillaCifrado").innerHTML = "";
@@ -44,8 +41,6 @@ function rejillaCipher(){
     let block = (size*size)/4;
     let cifrado = create(size);
     for(let i = 0; i < 4; i++){
-        console.table(grid);
-        console.log(prepro.substring(i*block, (i+1)*block));
         cifrado = fill(cifrado, grid, prepro.substring(i*block, (i+1)*block));
         grid = rotate(grid);
     }
