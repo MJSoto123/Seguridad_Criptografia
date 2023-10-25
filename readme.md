@@ -59,10 +59,10 @@ Cómo funciona:
 
 - Resultado cifrado: El resultado es el mensaje cifrado, que solo muestra las letras de las celdas seleccionadas en la rejilla.
 
-Para utilizar el encriptador por rejilla, siga estos pasos:
+Para utilizar el encriptador por rejilla, siga estos pasos , cabe aclarar que los pasos deben ser secuenciles , de caso contrario no se realizara el cifrado:
 
-1. Proporcione el texto que desea cifrar.
-2. Ejecute la aplicación del encriptador por rejilla.
+1. Proporcione el texto que se desea cifrar , primero se realizara el preprocesamiento.
+2. Una vez se muestre en la interfaz el texto preprocesado , genere la rejilla
 3. La aplicación generará una rejilla criptográfica y cifrará el texto.
 4. El resultado es el texto cifrado.
 
@@ -82,5 +82,11 @@ Para utilizar el encriptador por rejilla, siga estos pasos:
 - Texto Cifrado
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/585dcdd0-b93f-44a7-a624-ec3dca3f793a)
 
+### Ejemplos
 
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/ffe1aa3a-ad10-47b3-a52a-5a32fa430cac)
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/4d8f734c-cdbe-43b5-bb02-94ad2d74f0c1)
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/ade0aa79-b923-457e-bb0a-3836dea60083)
 
