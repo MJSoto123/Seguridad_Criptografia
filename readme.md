@@ -67,6 +67,8 @@ Para utilizar el encriptador por rejilla, siga estos pasos , cabe aclarar que lo
 4. El resultado es el texto cifrado.
 
 ## Interfaz
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/747d5f65-d551-4530-aa65-bf4b68e33b04)
+
 - Primera rotación
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/4b181a76-29de-4f28-83ac-a50702cd114e)
 
@@ -90,3 +92,8 @@ Para utilizar el encriptador por rejilla, siga estos pasos , cabe aclarar que lo
 
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/ade0aa79-b923-457e-bb0a-3836dea60083)
 
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/6fac4f51-2d62-453f-8f25-a7b3f393eb8d)
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/efa688bf-dd69-4769-a39d-83ed89a35183)
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/e87a698b-fdbf-432b-bffa-94055f6de44c)
