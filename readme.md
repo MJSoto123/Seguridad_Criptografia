@@ -8,31 +8,41 @@ Los algoritmos que presentamos en este repositorio son parte del curso de Seguri
 - Fiorela Estefany Villarroel Ramos
 - Freddy Leonel Humpiri Valdivia
 
-![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/81ccc354-04ce-44aa-95a3-8c8b4f7e8a24)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/28557be3-eb8e-4ff6-ad90-e5320494dc36)
 
 ## Desencriptador Polybios
-
-¿Qué es un cifrador por rejilla?
-
-Un cifrador por rejilla es una técnica de cifrado que utiliza una rejilla criptográfica para ocultar el texto original. La rejilla es una matriz con celdas que puede contener letras, números o símbolos. Para cifrar un mensaje, el cifrador coloca la rejilla sobre el mensaje original y solo revela las letras en las celdas seleccionadas, ocultando el resto del texto. Esto resulta en un mensaje cifrado que es difícil de entender sin la rejilla correcta.
+El cifrado de Polybios, también conocido como cifrado cuadrado de Polybios, es una técnica de cifrado que asocia cada letra de un alfabeto a una serie de coordenadas en una cuadrícula bidimensional. Este cifrado es nombrado en honor al matemático griego Polybios , quien es conocido por haberlo descrito.
+Aquí tienes los pasos básicos para entender cómo funciona el cifrado de Polibio:
 
 Cómo funciona:
 
-- Generación de la rejilla: El cifrador genera una rejilla criptográfica, que es una matriz de filas y columnas. El tamaño de la rejilla puede variar según la implementación.
+- **Creación de la Cuadrícula de Polibio:** Se crea una cuadrícula 5x5 (también puede ser 6x6 si incluyes caracteres especiales) que contiene letras del alfabeto (generalmente excluyendo "J" y usando "I" en su lugar). Las letras se organizan en filas y columnas.
 
-- Colocación de la rejilla: El cifrador coloca la rejilla sobre el mensaje original de manera que solo algunas celdas de la rejilla cubren las letras del mensaje.
+- **Asociación de Coordenadas:** Cada letra del alfabeto se representa mediante un par de números que indican su ubicación en la cuadrícula. Por ejemplo, "A" se representa como "11", "B" como "12", "C" como "13", y así sucesivamente.
+  
+- **Cifrado de Mensajes:** Para cifrar un mensaje, se toma cada letra del mensaje y se busca su par de números en la cuadrícula de Polibio. Estos pares de números se concatenan para formar el mensaje cifrado.
 
-- Revelación de letras: Solo se revelan las letras en las celdas seleccionadas. El resto del texto queda oculto.
-
-- Resultado cifrado: El resultado es el mensaje cifrado, que solo muestra las letras de las celdas seleccionadas en la rejilla.
+- **Descifrado de Mensajes:** Para descifrar el mensaje, se toma cada par de números en el mensaje cifrado y se busca la letra correspondiente en la cuadrícula.
 
 Para utilizar el desencriptador Polybios, siga los siguientes pasos:
 
-1. Proporcione el mensaje cifrado que desea descifrar.
+1. Proporcione el mensaje cifrado que desea descifrar , todos los dígitos deben de estar en un rango de [1..5].
 2. Ejecute el desencriptador Polybios.
 3. El desencriptador traducirá el mensaje y mostrará el resultado.
 
-Asegúrese de haber instalado todas las dependencias necesarias antes de ejecutar el desencriptador Polybios.
+### Interfaz 
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/e044ee6f-f593-46fd-b6ed-54445ef64742)
+
+### Ejemplos
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/f232026e-f9b1-4e52-aebe-62b83e7b3f58)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/c9d86b4a-d7d6-4bc7-a884-d358d738f15d)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/daff8d9a-e672-4476-9f64-757d4f5bbc53)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/0de868f9-e3a1-426b-88dd-90c4532c75b5)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/287427f7-ad61-4bdb-8078-9d7be51ca066)
+
+
 
 ## Encriptador Por Rejilla
 
