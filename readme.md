@@ -1,5 +1,3 @@
-# Algortimos de criptografia
-Los algoritmos que presentamos en este repositorio son para el curso de Seguridad en Ciencia de la Computación.
 # Algoritmos de Criptografía
 
 Los algoritmos que presentamos en este repositorio son parte del curso de Seguridad en Ciencia de la Computación.
