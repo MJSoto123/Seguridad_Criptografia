@@ -32,7 +32,7 @@ Para utilizar el desencriptador Polybios, siga los siguientes pasos:
 
 ### Interfaz 
 
-![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/e044ee6f-f593-46fd-b6ed-54445ef64742)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/a99ed249-faba-42ea-8217-ba0c068c2589)
 
 ### Ejemplos
 
@@ -41,7 +41,6 @@ Para utilizar el desencriptador Polybios, siga los siguientes pasos:
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/daff8d9a-e672-4476-9f64-757d4f5bbc53)
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/0de868f9-e3a1-426b-88dd-90c4532c75b5)
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/287427f7-ad61-4bdb-8078-9d7be51ca066)
-
 
 
 ## Encriptador Por Rejilla
@@ -66,3 +65,22 @@ Para utilizar el encriptador por rejilla, siga estos pasos:
 2. Ejecute la aplicación del encriptador por rejilla.
 3. La aplicación generará una rejilla criptográfica y cifrará el texto.
 4. El resultado es el texto cifrado.
+
+## Interfaz
+- Primera rotación
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/4b181a76-29de-4f28-83ac-a50702cd114e)
+
+- Segunda rotación
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/09cafd94-bbee-40c5-95ce-bcedcdf55cc6)
+
+- Tercera rotación
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/3c01fa9a-bc4c-4bfa-9126-77c373a6bda3)
+
+- Cuarta rotación 
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/5b0faa40-6516-4801-8d68-446d5fa18555)
+
+- Texto Cifrado
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/585dcdd0-b93f-44a7-a624-ec3dca3f793a)
+
+
+
