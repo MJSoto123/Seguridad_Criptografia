@@ -2,19 +2,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Cifrado Polybios</title>
+    <title>Descifrado Polybios</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navegación</a>
+        <a class="navbar-brand" href="#">Criptografía clásica</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Equipo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="polybios.html">Decifrado Polybios</a>
+                    <a class="nav-link" href="polybios.html">Descifrado Polybios</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="rejilla.html">Cifrado Por Rejilla</a>
@@ -30,18 +30,17 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Información sobre el Algoritmo</h5>
-                        <p class="card-text">
-                            El cifrado Polybios, también conocido como cifrado cuadrado Polybios, es un cifrado de sustitución simple. 
-                            En este cifrado, cada letra se reemplaza por una combinación de fila y columna de un cuadrado.
+                        <p class="card-text text-justify">
+                            El cifrado de Polybios, también conocido como cifrado cuadrado de Polybios, es un cifrado simple y antiguo utilizado para cifrar mensajes ocultando las letras mediante coordenadas en una cuadrícula. Su nombre proviene del matemático griego del siglo II a.C., Polibio, quien es conocido por haberlo descrito.
+                            El cifrado de Polybios generalmente se implementa utilizando una cuadrícula en forma de cuadrado o rectángulo. La cuadrícula contiene letras del alfabeto (generalmente omitiendo 'J', y usando números en su lugar) dispuestas en filas y columnas. Cada letra se representa mediante un par de números que indican su posición en la cuadrícula.
                         </p>
                     </div>
                 </div>
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Sobre el Cifrado Polybios</h5>
+                        <h5 class="card-title">Funcionamiento interno sobre el descifrado Polybios</h5>
                         <p class="card-text">
-                            El cifrado Polybios utiliza una cuadrícula (a menudo 5x5) con letras o números, y cada letra se representa mediante su posición en esta cuadrícula. 
-                            Es una técnica de cifrado simple y fácil de implementar.
+                            En nuestra implementación usamos el cifrado Polybios , para ello utilizamos una cuadrícula de 5x5 , en la cuál consideramos todas las letras del abecedario omitiendo la j y la ñ , usamos los indices como coordenadas y cada letra se representa mediante su posición en esta cuadrícula , es por este motivo que los dígitos de la entrada para el descifrado deben estar en el rango de [1..5]   
                         </p>
                     </div>
                 </div>
