@@ -2,6 +2,7 @@ let grid = create(2);
 let prepro = "";
 let size = 0;
 let key = "";
+let text_cif = "";
 function preprocesar() {
     var text = document.getElementById("rejillaInput").value;
     prepro = text.replace(/[^\w\s]|_/g, '').replace(/\s/g, '').toUpperCase();
@@ -9,13 +10,8 @@ function preprocesar() {
     for(let i = prepro.length; i < size*size; i++) prepro += "X";
     document.getElementById("rejillaPre").innerHTML = prepro;
     document.getElementById("rejillaKey").innerHTML = ""; key = "";
-    document.getElementById("rejillaCifrado").innerHTML = "";
-}
-
-function getSqrt(value){
-    let sq =  Math.ceil(Math.sqrt(value));
-    if(sq%2 != 0) sq++;
-    return sq;
+    document.getElementById("rejillaCifrado").innerHTML = ""; text_cif = "";
+    document.getElementById("rejillaDescifrado").innerHTML = "";
 }
 
 function genKey() {
@@ -23,19 +19,20 @@ function genKey() {
         document.getElementById("rejillaKey").innerHTML = ""; key = "";
         document.getElementById("rejillaPre").innerHTML = ""; prepro = "";
         document.getElementById("errorInfo").innerHTML = "Primero tienes que preprocesar";
-        document.getElementById("rejillaCifrado").innerHTML = "";
+        document.getElementById("rejillaCifrado").innerHTML = ""; text_cif = "";
         return;
     }
     grid = generateGrid(size);
     key = extract(grid, size);
     document.getElementById("rejillaKey").innerHTML = key;
     document.getElementById("errorInfo").innerHTML = "";
-    document.getElementById("rejillaCifrado").innerHTML = "";
+    document.getElementById("rejillaCifrado").innerHTML = ""; text_cif = "";
+    document.getElementById("rejillaDescifrado").innerHTML = "";
 }
 
 function rejillaCipher(){
     if(key == ""){
-        document.getElementById("errorInfo1").innerHTML = "Falta generar clave!";
+        document.getElementById("errorInfo2").innerHTML = "Falta generar clave!";
         return;
     }
     let block = (size*size)/4;
@@ -45,19 +42,12 @@ function rejillaCipher(){
         grid = rotate(grid);
     }
     let ans = extract(cifrado, size);
-    document.getElementById("rejillaCifrado").innerHTML = ans;
+    document.getElementById("rejillaCifrado").innerHTML = ans; text_cif = ans;
+    document.getElementById("rejillaDescifrado").innerHTML = "";
 }
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
-}
-
-function create(size){
-    let grid = new Array(size);
-    for (var i = 0; i < size; i++) {
-        grid[i] = new Array(size);
-    }
-    return grid;
 }
 
 function generateGrid(size){
@@ -99,6 +89,20 @@ function fill(result, grid, text){
     return result;
 }
 
+function getSqrt(value){
+    let sq =  Math.ceil(Math.sqrt(value));
+    if(sq%2 != 0) sq++;
+    return sq;
+}
+
+function create(size){
+    let grid = new Array(size);
+    for (var i = 0; i < size; i++) {
+        grid[i] = new Array(size);
+    }
+    return grid;
+}
+
 function rotate(grid){
     let sz = grid.length;
     let aux = create(sz);
@@ -110,3 +114,31 @@ function rotate(grid){
     return aux;
 }
 
+function rejillaDecifrar(){
+    if(text_cif == ""){
+        document.getElementById("errorInfo3").innerHTML = "Falta terminar el proceso de cifrado!";
+        return;
+    }
+
+    let sq = getSqrt(key.length);
+    let _grid = create(sq);
+    let _key = create(sq);
+    let idx = 0;
+    for(let i = 0; i < sq; i++){
+        for(let j = 0; j < sq; j++){
+            _grid[i][j] = text_cif[idx];
+            _key[i][j] = key[idx];
+            idx++;
+        }
+    }
+    let text_ori = "";
+    for(let k = 0; k < 4; k++){
+        for(let i = 0; i < sq; i++){
+            for(let j = 0; j < sq; j++){
+                if(_key[i][j] == 'X') text_ori += _grid[i][j];
+            }
+        }
+        _key = rotate(_key);
+    }
+    document.getElementById("rejillaDescifrado").innerHTML = text_ori;
+}
