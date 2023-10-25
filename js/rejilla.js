@@ -5,7 +5,8 @@ let key = "";
 let text_cif = "";
 function preprocesar() {
     var text = document.getElementById("rejillaInput").value;
-    prepro = text.replace(/[^\w\s]|_/g, '').replace(/\s/g, '').toUpperCase();
+    prepro =  text.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); 
+    prepro = prepro.replace(/[^\w\s]|_/g, '').replace(/\s/g, '').toUpperCase();
     size = getSqrt(prepro.length);
     for(let i = prepro.length; i < size*size; i++) prepro += "X";
     document.getElementById("rejillaPre").innerHTML = prepro;
