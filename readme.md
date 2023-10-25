@@ -10,6 +10,8 @@ Los algoritmos que presentamos en este repositorio son parte del curso de Seguri
 - Fiorela Estefany Villarroel Ramos
 - Freddy Leonel Humpiri Valdivia
 
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/81ccc354-04ce-44aa-95a3-8c8b4f7e8a24)
+
 ## Desencriptador Polybios
 
 ¿Qué es un cifrador por rejilla?
