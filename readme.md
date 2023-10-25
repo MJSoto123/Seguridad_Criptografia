@@ -8,7 +8,8 @@ Los algoritmos que presentamos en este repositorio son parte del curso de Seguri
 - Fiorela Estefany Villarroel Ramos
 - Freddy Leonel Humpiri Valdivia
 
-![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/28557be3-eb8e-4ff6-ad90-e5320494dc36)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/a99ed249-faba-42ea-8217-ba0c068c2589)
+
 
 ## Desencriptador Polybios
 El cifrado de Polybios, también conocido como cifrado cuadrado de Polybios, es una técnica de cifrado que asocia cada letra de un alfabeto a una serie de coordenadas en una cuadrícula bidimensional. Este cifrado es nombrado en honor al matemático griego Polybios , quien es conocido por haberlo descrito.
@@ -32,7 +33,7 @@ Para utilizar el desencriptador Polybios, siga los siguientes pasos:
 
 ### Interfaz 
 
-![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/a99ed249-faba-42ea-8217-ba0c068c2589)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/28557be3-eb8e-4ff6-ad90-e5320494dc36)
 
 ### Ejemplos
 
@@ -67,6 +68,8 @@ Para utilizar el encriptador por rejilla, siga estos pasos , cabe aclarar que lo
 4. El resultado es el texto cifrado.
 
 ## Interfaz
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/747d5f65-d551-4530-aa65-bf4b68e33b04)
+
 - Primera rotación
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/4b181a76-29de-4f28-83ac-a50702cd114e)
 
@@ -90,3 +93,8 @@ Para utilizar el encriptador por rejilla, siga estos pasos , cabe aclarar que lo
 
 ![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/ade0aa79-b923-457e-bb0a-3836dea60083)
 
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/6fac4f51-2d62-453f-8f25-a7b3f393eb8d)
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/efa688bf-dd69-4769-a39d-83ed89a35183)
+
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/e87a698b-fdbf-432b-bffa-94055f6de44c)
