@@ -8,7 +8,8 @@ Los algoritmos que presentamos en este repositorio son parte del curso de Seguri
 - Fiorela Estefany Villarroel Ramos
 - Freddy Leonel Humpiri Valdivia
 
-![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/28557be3-eb8e-4ff6-ad90-e5320494dc36)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/a99ed249-faba-42ea-8217-ba0c068c2589)
+
 
 ## Desencriptador Polybios
 El cifrado de Polybios, también conocido como cifrado cuadrado de Polybios, es una técnica de cifrado que asocia cada letra de un alfabeto a una serie de coordenadas en una cuadrícula bidimensional. Este cifrado es nombrado en honor al matemático griego Polybios , quien es conocido por haberlo descrito.
@@ -32,7 +33,7 @@ Para utilizar el desencriptador Polybios, siga los siguientes pasos:
 
 ### Interfaz 
 
-![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/a99ed249-faba-42ea-8217-ba0c068c2589)
+![image](https://github.com/MJSoto123/Seguridad_Criptografia/assets/79772873/28557be3-eb8e-4ff6-ad90-e5320494dc36)
 
 ### Ejemplos
 
